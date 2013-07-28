@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Help Documents</title>
+	<link href="welcome.css" type="stylesheet" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+	<h1>Sessions</h1>
+	<div id="body">
+		<p>
+			Sessions are easier now with our new session handling method.<br>
+			In order to set sessions, we must do this:<br>
+			<code>
+				$this->session->set_userdata();
+			</code><br>
+			Now you can put an array though there, or a normal value. We will sample both.<br>
+			<code>
+				// Array<br>
+				$this->session->set_userdata(array('session_name' => 'session_value'));<br>
+				// Normal<br>
+				$this->session->set_userdata('session_value', 'session_name');<br>
+			</code>
+			<section><B>How to check if session is active</B></section><br>
+			<code>
+				if($this->session->userdata('session_name')) { echo 'session active'; } else { echo 'no active session'; }
+			</code><br>
+			<b>How to destroy all sessions</b><br>
+			<code>
+				$this->session->dc();
+			</code><br>
+			<b>How to destory one session</b><br>
+			<code>
+				$this->session->dco('session_name');
+			</code>
+		</p>
+	</div>
+
+	<p class="footer">This framework is opensource and free.</p>
+</div>
+
+</body>
+</html>

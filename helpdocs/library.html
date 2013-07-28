@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Help Documents</title>
+	<link href="welcome.css" type="stylesheet" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+	<h1>Library</h1>
+	<div id="body">
+		<p>
+			We use a library system, meaning anyone can import / create librarys and share/use them. In this example we create a simple library.<br>
+			We start out by creating a file in <b>application/librarys/</b> and I name it personally: example.php(you can name it anything you want).<br>
+			Now, we have to create a class for the library, the library class will extend the Library itself.<br>
+			<code>
+				&lt;?php<br>
+					class Example extends Library {<br>
+						function __construct() {<br>
+							parent::__construct(); //  Parent the constructor<br>
+						}<br>
+						public function run() {<br>
+							// To be called when run.<br>
+							echo 'We made it!'; // Display we made it message. <br>
+						}<br>
+					}<br>
+				?><br>
+			</code><br>
+
+			Now to execute this code, we open our MODEL (where we will be calling it) and run:<br>
+			<code>
+				<font color="blue">$this-></font><font color="blue">library-></font><font color="blue">load('example');</font><br>
+				<font color="green">// Then we can do:</font><br>
+				<font color="blue">$this->library->example->run();</font><br>
+			</code><br>
+
+			And that is how we created our very first Library.
+		</p>
+	</div>
+
+	<p class="footer">This framework is opensource and free.</p>
+</div>
+
+</body>
+</html>
