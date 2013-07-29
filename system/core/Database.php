@@ -1,7 +1,7 @@
 <?php
 		require_once('system/config/settings.php');
-		global $settings; // To fix some issues.
-		if($settings['db_enabled']==true) { // Add new db_enabled method to speed up site.
+		global $settings;
+		if($settings['db_enabled']==true) {
 			$host = $settings['db_hostname'];
 			$dbname = $settings['db_name'];
 			$dbusername = $settings['db_username'];

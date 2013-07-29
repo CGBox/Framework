@@ -12,6 +12,7 @@ class Controller {
 		$this->security = new Security;
 		$this->crypto = new Crypto;
 		$this->detect = new Detector;
+		$this->helper = new Helper;
 		global $db;
 		$this->db = $db;
 	}
