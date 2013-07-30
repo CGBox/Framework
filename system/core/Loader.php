@@ -15,4 +15,5 @@ require_once('system/core/Session.php');
 require_once('system/core/Security.php');
 require_once('system/core/Detector.php');
 require_once('system/core/Helper.php');
+require_once('system/core/Editor.php');
 ?>

@@ -13,6 +13,7 @@ class Controller {
 		$this->crypto = new Crypto;
 		$this->detect = new Detector;
 		$this->helper = new Helper;
+		$this->editor = new Editor;
 		global $db;
 		$this->db = $db;
 	}
