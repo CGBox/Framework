@@ -14,6 +14,8 @@ class Controller {
 		$this->detect = new Detector;
 		$this->helper = new Helper;
 		$this->editor = new Editor;
+		$this->rum = new Rum;
+		$this->remap = new Remap;
 		global $db;
 		$this->db = $db;
 	}
