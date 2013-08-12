@@ -16,6 +16,8 @@ class Controller {
 		$this->editor = new Editor;
 		$this->rum = new Rum;
 		$this->remap = new Remap;
+		$this->html5 = new Html5;
+		$this->crawl = new Crawl;
 		global $db;
 		$this->db = $db;
 	}

@@ -12,5 +12,10 @@ class Rum {
 		$browser = $this->detector->browser();
 		$os = $this->detector->os();
 		$mobile = $this->detector->mobile();
+		$data = 'SPL[IP:'.$ip.']';
+		$data .= 'SPL[BROWSER:'.$browser.']';
+		$data .= 'SPL[OS:'.$os.']';
+		$data .= 'SPL[MOBILE:'.$mobile.']';
+		return $data;
 	}
 }
