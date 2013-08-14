@@ -20,4 +20,5 @@ require_once('system/core/Rum.php');
 require_once('system/core/Remap.php');
 require_once('system/core/Html5.php');
 require_once('system/core/Crawl.php');
+require_once('system/core/Plugin.php');
 ?>

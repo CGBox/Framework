@@ -18,6 +18,7 @@ class Controller {
 		$this->remap = new Remap;
 		$this->html5 = new Html5;
 		$this->crawl = new Crawl;
+		$this->plugin = new Plugin;
 		global $db;
 		$this->db = $db;
 	}
